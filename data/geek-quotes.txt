@@ -1,0 +1,482 @@
+Documentation should answer questions of what, where and why. The code already answers "how" so don't waste time on that.
+    - Jeff Staddon
+
+Here is how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die.
+    - Cory Doctrow on enshittification
+
+Designing a good API is identical to designing the future.
+    - Jaana Dogan
+
+A big part of my work as a consultant is disambiguating antecedents. 
+    - John D. Cook
+
+If you don't know the pain points of your system how do you make it better?
+    - April Edwards
+
+The mark of a mature programmer is willingness to throw out code you spent time on when you realize it's pointless.
+    - Bram Cohen
+
+Any sufficiently complicated C or Fortran program contains an ad-hoc, informally-specified bug-ridden slow implementation of half of Common Lisp.
+    - Philip Greenspun (Greenspun's tenth rule)
+
+The good thing about standards is that there are so many to choose from.
+    - Andrew S. Tanenbaum
+
+Some people, when confronted with a problem, think, "I know, I'll use threads," and then two they hav erpoblesms.
+    - Ned Batchelder
+
+You don't have to be an engineer to be be a racing driver, but you do have to have mechanical sympathy.
+    - Jackie Stewart
+
+6 Rules of highly available systems.
+- Isolation
+- Concurrency
+- Must detect failures
+- Fault identification
+- Live code upgrade
+- Stable storage
+    - Joe Armstrong (https://www.infoq.com/presentations/Building-Highly-Available-Systems-in-Erlang)
+
+There are only two kinds of languages: the ones people complain about and the ones nobody uses.
+    - Bjarne Stroustrup
+
+Metaclasses are deeper magic than 99% of users should ever worry about. If you wonder whether you need them, you don’t (the people who actually need them know with certainty that they need them, and don’t need an explanation about why).
+    - Tim Peters
+
+The primary feature for easy maintenance is locality: Locality is that characteristic of source code that enables a programmer to understand that source by looking at only a small portion of it.
+    - Richard Gabriel
+
+The fastest algorithm can frequently be replaced by one that is almost as fast and much easier to understand.
+    - Douglas W. Jones
+
+Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. Code for readability.
+    - Martin Golding
+
+...every time I add the sqlite amalgamation — sqlite.c and sqlite.h — to my @PlatformIO_Org project, it adds Doom as one of my dependencies.
+    - Joe Castillo
+
+If having a coffee in the morning doesn't wake you up, try deleting a table in a production database instead.
+    - Juozas Kaziukenas
+
+First rule of computer security: don't buy a computer. Second rule: if you buy one, don't turn it on.
+    - Dark Avenger
+
+The past 30 years have been completely mundane. It's all been scaling (of old technology) and Angry Birds.
+    - Alan Kay
+
+Your product should be cutting edge, not your tech. Stability is sexy.
+    - Zach Holman
+
+A programming language that doesn't affect the way you think about programming, is not worth learning.
+    - Alan Perlis
+
+Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves.
+    - Alan Kay
+
+Agile is like Churchhill's democracy, the worst possible solution until compared to the alternatives
+    - David Starr
+
+With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody.
+    -  Hyrum's law
+
+Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better.
+    - Dijkstra (1984)
+
+In general, it is best to assume that the network is filled with malevolent entities that will send in packets designed to have the worst possible effect.
+    - RFC 1122
+
+Vim is my favourite text editor. I've been using it for years...I can't figure out how to exit.
+    - Unknown
+
+Write clear, precise code. Every ten years it will run 1,000 times faster.
+    - Joe Armstrong
+
+Functional programming combines the flexibility and power of abstract mathematics with the intuitive clarity of abstract mathematics.
+    - http://www.xkcd.com/1270/
+
+The problem with object-oriented languages is they've got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
+    - Joe Armstrong
+
+The first necessity is for the software designer and his customers to recognize that there is a conflict of objectives, and that there is the need for compromise. Secondly, it is essential that the compromise be selected in the light of a sound knowledge of good algorithms and program structures, and not merely as a result of wishful thinking of a sales or product specification department. 
+    - Tony Hoare
+
+As well as being very simple to use, a software program must be very difficult to misuse.
+    - Tony Hoare
+
+I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies.
+    - Tony Hoare
+
+The "AI Effect" is that whenever AI manages to do something "intelligent", we stop thinking of it as "intelligence", but just rote computation. To many, this is just humans moving the goalposts. To me, it's something far more beautiful, precious, and sadder.
+    - @hillelogram (https://twitter.com/hillelogram/status/1427065374558887940?s=03) 
+
+A well-designed system makes it easy to do the right things and annoying (but not impossible) to do the wrong things.
+    - Jeff Atwood (https://blog.codinghorror.com/falling-into-the-pit-of-success/)
+
+The two hardest problems in computer science are computers and science.
+    - Hillel Wayne (https://twitter.com/hillelogram/status/1415807638579916805?s=03)
+
+Data structures, not algorithms, are central to programming.
+    - Rob Pike (https://users.ece.utexas.edu/~adnan/pike.html)
+
+Data matures like wine, applications mature like fish.
+    - Connor McDonald (https://twitter.com/connor_mc_d/status/1395933213785137157?s=03)
+
+As personal choice, we tend not to use debuggers beyond getting a stack trace or the value of a variable or two. One reason is that it is easy to get lost in details of complicated data structures and control flow; we find stepping through a program less productive than thinking harder and adding output statements and self-checking code at critical places. Clicking over statements takes longer than scanning the output of judiciously-placed displays. It takes less time to decide where to put print statements than to single-step to the critical section of code, even assuming we know where that is. More important, debugging statements stay with the program; debugging sessions are transient.
+    - Brian W. Kernighan & Rob Pike "The Practice of Programming"
+
+The hardest bugs are those where your mental model of the situation is just wrong, so you can't see the problem at all.
+    - Brian Kernighan
+
+There are two kinds of software projects: those that fail, and those that turn into legacy horrors.
+    - Peter Weinberger
+
+The software business is one of the few places we teach people to write before we teach them to read." 
+    - Tom Love
+
+Whenever Code meets Standards, Code wins. Code has to take into account human laziness, ignorance, carelessness. Standards never do.
+    - Peter Wang (https://twitter.com/pwang/status/1376866700776329220?s=03)
+
+Telling a programmer there's already a library to do X is like telling a songwriter there's already a song about love.
+    - Pete Cordell
+
+Abstractions are discovered not created.
+    - Ben Rady (https://www.twoscomplement.org/podcast/testing_in_cpp.txt)
+
+Memory management is like an onion: layred, complicated and sometimes makes you cry.
+    - Michael Knyszek (https://www.youtube.com/watch?v=S_1YfTfuWmo)
+
+Generics are type-checked macros. Think twice before using a macro.
+    - Robert Griesemer (https://www.youtube.com/watch?v=TborQFPY2IM)
+
+Genericity introduces abstraction, and needless abstraction introduces complexity. Move cautiously!
+    - Robert Griesemer (https://www.youtube.com/watch?v=TborQFPY2IM)
+
+When you combine two pieces of data you get data. When you combine two machines you get trouble.
+    - Rich Hickey
+
+The map is not the territory and data is not the world observed. Data is messy, inconsistent, and unreliable. The world is messier, less consistent, and less reliable.
+    - Alfred Korzybski.
+
+Don't design with interfaces, discover them.
+    - Rob Pike
+
+If statistics are boring, you've got the wrong numbers.
+    - Edward Tufte
+
+I never write a program I don't understand.
+    - Jon Bentley, "Programming Pearls"
+
+Some people, when confronted with a problem, think "I know, I'll use regular expressions." Now they have two problems.
+    - Jamie Zawinski
+
+An apparently innocuous bug discovered but left unfixed will soon cause a significant problem.
+    - Brockman's Law
+
+Tidy datasets are all alike, but every messy dataset is messy in its own way.
+    - Hadley Wickham (cf. Leo Tolstoy)
+
+A common fallacy is to assume authors of incomprehensible code will somehow be able to express themselves lucidly and clearly in comments.
+    - Kevlin Henney (https://twitter.com/KevlinHenney/status/381021802941906944)
+
+Object-oriented programming is an exceptionally bad idea which could only have originated in California.
+    - Edsger W. Dijkstra
+
+Don't comment bad code, rewrite it.
+    - Brian W. Kernighan and P. J. Plaugher
+
+Observability makes developers write better code. 
+    - Christine Yen (via https://twitter.com/rakyll/status/1234853960504270849)
+
+Choose boring technology.
+    - Dan McKinley (https://mcfunley.com/choose-boring-technology)
+
+Code in production is the only code that matters.
+    - Paul Osman (http://j.mp/2PKhvVK)
+
+You can write robust systems without dynamic memory, but it is very very difficult - beyond the skills of most developers.
+    - Robert Engels (http://j.mp/2SyUSFw)
+
+If you have a procedure with 10 parameters, you probably missed some.
+    - Alan J. Perlis
+
+In most projects, the first system built is barely usable....Hence plan to throw one away; you will, anyhow.
+    - Fred Brooks, The Mythical Man-Month
+
+It's amazing how much data processing code goes away when your data is stored appropriately (usually tidy). Often, I can delete half my code once I figure out how I should have reshaped the data.
+    - Sean J. Taylor (http://j.mp/2StNbAy)
+
+Benchmark. Analyze. Improve. Verify. Iterate.
+    - Jon Bentley's (Writing Efficient Programs)
+
+The zero-overhead principle: What you don't use, you don't pay for. And further: What you do use, you couldn't hand code any better.
+    - Bjarne Stroustrup
+
+If a human operator needs to touch your system during normal operations, you have a bug.
+    - Carla Geisser, Google SRE
+
+Prototype for 1x. Build for 10x. Engineer for 100x.
+    - Dj Patil
+
+There's nothing more permanent than a temporary hack.
+    - Kyle Simpson
+
+Programming is a social activity.
+    - Robert C. Martin
+
+The essence of writing code then is to internalize the problem domain, understand its nature, build its mental model and capture insight in a programming language.
+    - Ivan Daniluk (https://divan.dev/posts/visual_programming_go/)
+
+This Fibonacci joke is as bad as the last two you heard combined.
+    - ???
+
+The best programs are the ones written when the programmer is supposed to be working on something else.
+    - Melinda Varian
+
+I don't know how many of you have ever met Dijkstra, but you probably know that arrogance in computer science is measured in nano-Dijkstras.
+    - Alan Kay
+
+Make it work, then make it beautiful, then if you really, really have to, make it fast. 90 percent of the time, if you make it beautiful, it will already be fast. So really, just make it beautiful!
+    - Joe Armstrong
+
+No code is faster than no code.
+    - Merb Motto
+
+There are only three optimizations: Do less. Do it less often. Do it faster. The largest gains come from 1, but we spend all our time on 3.
+    - Michael Fromberger (https://twitter.com/creachadair/status/1039602865831010305)
+
+The most effective debugging tool is still careful thought, coupled with judiciously placed print statements.
+    - Brian Kernighan
+
+If you don't know how compilers work, then you don't know how computers work.
+    - Steve Yegge (http://steve-yegge.blogspot.com/2007/06/rich-programmer-food.html)
+
+SQL, Lisp, and Haskell are the only programming languages that I've seen where one spends more time thinking than typing.
+    - Philip Greenspun
+
+It's better to have a hole in your org. than an asshole.
+    - Laura Behrens-Wu (Shippo) in http://bit.ly/2Sq0XkP
+
+Performance Mantras
+    1. Don't do it
+    2. Do it, but don't do it again
+    3. Do it less
+    4. Do it later
+    5. Do it when they're not looking
+    6. Do it concurrently
+    7. Do it cheaper
+    - http://www.brendangregg.com/methodology.html
+
+I'm a big proponent of testing, I'm not a big proponent of test writing.
+    - Rich Hickey (http://j.mp/2B8NGcC)
+
+In every program there's a line of code you can take out and it'll still work.
+    - Gabriel Berelejis (Josh Salomon?)
+
+A programming language is low level when its programs require attention to the irrelevant.
+    - Alan Perlis
+
+Software engineering is what happens to programming when you add time and other programmers.
+    - Russ Cox (https://research.swtch.com/vgo-eng)
+
+In order to understand recursion, one must first understand recursion.
+    - Anonymous
+
+The romantic image of an uber-programmer is someone who fires up Emacs, types like a machine gun, and delivers a flawless final product from scratch. A more accurate image would be someone who stares quietly into space for a few minutes and then says "Hmm. I think I've seen something like this before.
+    - John D. Cook
+
+The problem with object-oriented languages is they've got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
+    - Joe Armstrong
+
+Program testing can be used to show the presence of bugs, but never to show their absence!
+    - Dijkstra
+
+There are only two hard problems in Computer Science: cache invalidation and naming things.
+    - Phil Karlton
+
+The only way to learn a new programming language is by writing programs in it.
+    - Dennis Ritchie
+
+Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.
+    - Eagleson's law
+
+The quality of code is inversely proportional to the effort it takes to understand it. 
+    - @venkat_s (https://twitter.com/mariofusco/status/971089932516233216)
+ 
+Code gets rewritten all the time. Don't get too attached to it. The ideas are all that matter.
+    - Parisa Tabriz (https://twitter.com/laparisa/status/957384254014410753)
+
+UNIX was not designed to stop its users from doing stupid things, as that would also stop them from doing clever things.
+    - Doug Gwyn
+
+The cheapest, fastest and most reliable components of a computer system are those that aren't there.
+    - Gordon Bell
+
+Programs which cannot be maintained will be rewritten.
+    - Carmen Andoh (https://www.infoq.com/presentations/go-concurrency-gc)
+
+If you can't be replaced, you cannot be promoted.
+    - Carmen Andoh (https://www.infoq.com/presentations/go-concurrency-gc)
+
+You're not paid to program, you're not even paid to maintain someone else's program, you're paid to deliver solutions to the business.
+    - Dave Cheney
+
+Duplication is far cheaper than the wrong abstraction.
+    - @sandimetz 
+
+Division of labor is a dangerous fiction when all of your big problems are integration problems.
+    - Kent Beck
+
+First you learn the value of abstraction, then you learn the cost of abstraction, then you're ready to engineer.
+    - Kent Beck
+
+Floating point is sort of like quantum physics: the closer you look, the messier it gets.
+    - Grant Edwards
+
+XML is like violence - if it doesn't solve your problems, you are not using enough of it.
+    - Unknown (http://tinyurl.com/ovdf9k)
+
+When C++ is your hammer, everything starts to look like your thumb.
+    - Amazon interview candidate
+
+We build our computer (systems) the way we build our cities: over time, without a plan, on top of ruins.
+    - Ellen Ullman
+
+If your code needs comments, consider refactoring it so it doesn't.
+    - Kevlin Henney
+
+You need to understand the data first before you start writing the code.
+    - Ivan Daniluk (http://j.mp/2st7C0c)
+
+Bad programmers worry about the code. Good programmers worry about data structures and their relationships.
+    - Linus
+
+The key to performance is elegance, not battalions of special cases.
+    - Jon Bentley and Doug McIlroy
+
+Before software can be reusable it first has to be usable.
+    - Ralph Johnson
+
+If you torture the data long enough, it will confess.
+    - Ronald Coase
+
+A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable.
+    - Leslie Lamport
+
+Debugging is like being a detective in a crime movie where you're also the murderer.
+    - Filipe Fortes
+
+Not everything is Pareto distributed, but 80% of it is.
+    - @ProbFact (https://twitter.com/ProbFact/status/796493879251976193)
+
+Write code that is easy to delete, not easy to extend.
+    - tef (http://j.mp/2dKkgkK)
+
+We were supposed to make AI do all the work and we play games but we do all the work and the AI is playing games!
+    - Unknown (https://twitter.com/karpathy/status/784212363062816768)
+
+The trouble with programmers is that you can never tell what a programmer is doing until it's too late.
+    - Seymour Cray
+
+Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.
+    - Eric Raymond
+
+The most amazing achievement of the computer software industry is its continuing cancellation of the steady and staggering gains made by the computer hardware industry.
+    - Henry Petroski
+
+Design is the art of arranging code that needs to work today, and to be easy to change forever.
+    - Sandi Metz
+
+A great rule of thumb for Go is accept interfaces, return structs.
+    - Jack Lindamood
+
+Walking on water and developing software from a specification are easy if both are frozen.
+    - Edward V Berard
+
+I don't care if it works on your machine! We are not shipping your machine!
+    - Ovidiu Platon
+
+Maturity = (Blood + Sweat) / Complexity
+    - Martin Weiner (http://j.mp/2aEW0P7)
+
+If you think you don't have data quality problems, you are probably screwed.
+    - Jean-Nicholas Hould (http://j.mp/2aEVEZ2)
+
+Every single company I've worked at and talked to has the same problem without a single exception so far - poor data quality, especially tracking data. Either there's incomplete data, missing tracking data, duplicative tracking data.
+    - DJ Patil
+
+To visualize big data it need to become small data.
+    - Jason Sundram
+
+Of all the analogies to software engineering, plumbing is the best. However, even that is still leaky.
+    - @gigasquid (https://twitter.com/gigasquid/status/759894495093788673)
+
+I don't have time to learn an existing library - much faster to make my own mistakes!
+    - ??? (http://j.mp/1V8AxSV)
+
+Much of the doubling of speed for core Python that has occurred over the last ten decade has occurred one little step at a time, none of the them being individually dramatic." 
+    - Raymond Hettinger (http://bugs.python.org/issue25823). 
+
+Code never lies, comments sometimes do.
+    - Ron Jeffries
+
+May the queries flow, and the pagers remain silent.
+    - SRE Benediction (http://j.mp/1LRZ8mE)
+
+Engineers call them edge cases. I call them: what our users do.
+    - @LooseWireStudio
+
+A computer lets you make more mistakes faster than any invention in human history, with the possible exceptions of handguns and tequila.
+    - Mitch Radcliffe
+
+Blame doesn't fix bugs.
+    - Anonymous
+
+Deleted code is debugged code.
+    - Jeff Sickel
+
+Without requirements or design, programming is the art of adding bugs to an empty text file.
+    - Louis Srygley
+
+With good program architecture debugging is a breeze, because bugs will be where they should be.
+    - David May
+
+Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.
+    - Brian W. Kernighan
+
+If debugging is the process of removing bugs, then programming must be the process of putting them in.
+    - Edsger Dijkstra
+
+Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
+    - Bill Mitchell 
+
+80% of the work in any data project is in cleaning the data.
+    - DJ Patil 
+
+Gentoo is like bitcoin, but the only things it buys is pain.
+    - Unknown at PyWeb-IL 1/2015 meetup
+
+perl5 is just syntax; CPAN is the language
+    - Audrey Tang
+
+Never invest in a tech CEO that wears a suite.
+    - Peter Thiel (Zero to One)
+
+People, then products, then traffic, then revenue.
+    - Marissa Mayer
+
+The purpose of computing is insight, not numbers.
+    - Richard Hamming
+
+If you dive into the bug, you tend to fix the local issue in the code, but if you think about the bug first, how the bug came to be, you often find and correct a higher-level problem in the code that will improve the design and prevent further bugs.
+    - Rob Pike
+
+If you can't measure something, don't build it. If you couldn't measure the results, don't try it. Because how do you know it's working? How do you know it isn't?
+    - Andrew Trader
+
+Two rules of database systems
+1. It takes 7 years minimum to create a production-ready database system
+2. You're not an exception to rule 1
+    - Luca Candela
+
+Organizations which design systems ...  are constrained to produce designs which are copies of the communication structures of these organizations.
+    - Conway's Law
