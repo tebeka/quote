@@ -1,3 +1,3 @@
-module github.com/tebeka/quotes
+module github.com/tebeka/quote
 
 go 1.22
