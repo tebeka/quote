@@ -27,6 +27,11 @@ func main() {
 	flag.IntVar(&options.count, "count", 1, "number of results to return")
 	flag.Parse()
 
+	if flag.NArg() != 0 {
+		fmt.Fprintf(os.Stderr, "error: wrong number of arguments\n")
+		os.Exit(1)
+	}
+
 	quotes := quoteDB
 
 	if options.query != "" {
