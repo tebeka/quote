@@ -24,6 +24,20 @@ func TestHelp(t *testing.T) {
 	}
 }
 
+func TestVersion(t *testing.T) {
+	var buf bytes.Buffer
+	cmd := exec.Command("go", "run", ".", "-version")
+	cmd.Stdout = &buf
+	cmd.Stderr = &buf
+	if err := cmd.Run(); err != nil {
+		t.Fatalf("running: %s", err)
+	}
+
+	if !strings.Contains(buf.String(), "version") {
+		t.Fatalf("unexpected output:\n%s", buf.String())
+	}
+}
+
 func TestCount(t *testing.T) {
 	var buf bytes.Buffer
 	count := 7

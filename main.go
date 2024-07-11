@@ -34,9 +34,13 @@ func printJSON(quotes []string) {
 	json.NewEncoder(os.Stdout).Encode(jsonQuotes)
 }
 
+var version = "0.3.0"
+
 func main() {
 	var count int
 	var jsonOutput bool
+	var showVersion bool
+
 	flag.Usage = func() {
 		name := path.Base(os.Args[0])
 		fmt.Fprintf(os.Stderr, "usage: %s [options]\n", name)
@@ -45,11 +49,17 @@ func main() {
 	}
 	flag.IntVar(&count, "n", 1, "number of results to return")
 	flag.BoolVar(&jsonOutput, "json", false, "output in JSON format")
+	flag.BoolVar(&showVersion, "version", false, "show version and exit")
 	flag.Parse()
 
 	if flag.NArg() > 1 {
 		fmt.Fprintf(os.Stderr, "error: wrong number of arguments\n")
 		os.Exit(1)
+	}
+
+	if showVersion {
+		fmt.Printf("quote version %s\n", version)
+		os.Exit(0)
 	}
 
 	quotes := quoteDB
