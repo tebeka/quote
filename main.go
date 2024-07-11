@@ -13,25 +13,25 @@ import (
 //go:generate go run gen_quotes.go
 //go:generate go fmt quotes.go
 
-type Quote struct {
-	Text   string `json:"text"`
-	Author string `json:"author"`
+func parseQuote(quote string) (string, string) {
+	parts := strings.Split(quote, "\n")
+	text := strings.Join(parts[:len(parts)-1], " ")
+	author := strings.TrimPrefix(parts[len(parts)-1], "    - ")
+	return text, author
 }
 
 func printJSON(quotes []string) {
-	var jsonQuotes []Quote
+	var jsonQuotes []map[string]string
 	for _, q := range quotes {
-		parts := strings.Split(q, "\n")
-		text := strings.Join(parts[:len(parts)-1], " ")
-		author := strings.TrimPrefix(parts[len(parts)-1], "    - ")
-		jsonQuotes = append(jsonQuotes, Quote{Text: text, Author: author})
+		text, author := parseQuote(q)
+		m := map[string]string{
+			"text":   text,
+			"author": author,
+		}
+		jsonQuotes = append(jsonQuotes, m)
 	}
-	jsonData, err := json.MarshalIndent(jsonQuotes, "", "  ")
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "error: %s\n", err)
-		os.Exit(1)
-	}
-	fmt.Println(string(jsonData))
+
+	json.NewEncoder(os.Stdout).Encode(jsonQuotes)
 }
 
 func main() {
