@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"flag"
 	"fmt"
 	"math/rand"
@@ -12,8 +13,30 @@ import (
 //go:generate go run gen_quotes.go
 //go:generate go fmt quotes.go
 
+type Quote struct {
+	Text   string `json:"text"`
+	Author string `json:"author"`
+}
+
+func printJSON(quotes []string) {
+	var jsonQuotes []Quote
+	for _, q := range quotes {
+		parts := strings.Split(q, "\n")
+		text := strings.Join(parts[:len(parts)-1], " ")
+		author := strings.TrimPrefix(parts[len(parts)-1], "    - ")
+		jsonQuotes = append(jsonQuotes, Quote{Text: text, Author: author})
+	}
+	jsonData, err := json.MarshalIndent(jsonQuotes, "", "  ")
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "error: %s\n", err)
+		os.Exit(1)
+	}
+	fmt.Println(string(jsonData))
+}
+
 func main() {
 	var count int
+	var jsonOutput bool
 	flag.Usage = func() {
 		name := path.Base(os.Args[0])
 		fmt.Fprintf(os.Stderr, "usage: %s [options]\n", name)
@@ -21,6 +44,7 @@ func main() {
 		flag.PrintDefaults()
 	}
 	flag.IntVar(&count, "n", 1, "number of results to return")
+	flag.BoolVar(&jsonOutput, "json", false, "output in JSON format")
 	flag.Parse()
 
 	if flag.NArg() > 1 {
@@ -51,8 +75,14 @@ func main() {
 	})
 
 	n := min(count, len(quotes))
-	for i := range n {
-		fmt.Println(quotes[i])
-		fmt.Println()
+	selectedQuotes := quotes[:n]
+
+	if jsonOutput {
+		printJSON(selectedQuotes)
+	} else {
+		for _, q := range selectedQuotes {
+			fmt.Println(q)
+			fmt.Println()
+		}
 	}
 }
